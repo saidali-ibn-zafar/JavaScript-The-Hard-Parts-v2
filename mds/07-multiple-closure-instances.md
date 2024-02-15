@@ -1,6 +1,7 @@
 
 # Multiple Closure Instances
 
+- functions can be returned from other functions in JavaScript.
 ```js
 function outer() {
   let counter = 0;

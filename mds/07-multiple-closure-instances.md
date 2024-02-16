@@ -24,3 +24,17 @@ const anotherFunction = outer();
 anotherFunction(); // 1
 anotherFunction(); // 2
 ```
+
+
+```js
+function createFunction () {
+  function multiplyBy2 (num) {
+    return num * 2;
+}
+return multiplyBy2;
+}
+
+const generatedFunc = createFunction();
+
+const result = genearatedFunc(3); // 6
+```
